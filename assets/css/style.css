@@ -16,8 +16,36 @@ h1,h2{
     letter-spacing: 4px;
     color:#252525;
 }
+
+#menu, #logo{   /* separate by comma is important otherwise it will consider it as the child which doesnt exists*/
+line-height: 100px;
+}
 #logo{
     float: left;
-    font-size:280%;
-
+    font-size:280%;  /*when you want an item to be relative to the page size, then use % */
 }
+
+#menu{
+    font-size:110%;
+    letter-spacing: 4px;
+}
+
+#menu li{
+    float: right;
+    list-style-type: none;
+    margin-right:30px;
+}
+
+#menu a{
+    text-decoration: none;
+    color:inherit;  /*It inherits the color from the closest parent*/
+}
+
+#menu a:hover{
+   border-bottom: 1px solid #3a3a3a;
+    
+}
+.active{                         /* to underline/hihghtlight the active class*/
+    border-bottom: 1px solid #3a3a3a;
+}
+
